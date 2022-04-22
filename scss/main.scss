@@ -1,5 +1,18 @@
-@use "mixins";
-@use "variables";
+@mixin tablet {
+  @media screen and (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1040px) {
+    @content;
+  }
+}
+
+$primary-color: #e3282d;
+$secondary-color: #f0e8e6;
+$third-color: #ba2323;
 
 html,
 body {
@@ -19,10 +32,10 @@ body {
       height: 120px;
       z-index: 10;
       box-shadow: 5px 0px 15px 0px rgba(84, 84, 84, 0.358);
-      @include mixins.tablet {
+      @include tablet {
         height: 80px;
       }
-      @include mixins.desktop {
+      @include desktop {
         height: 84px;
       }
       .logotype-box {
@@ -33,18 +46,18 @@ body {
         .navigate-icon {
           height: 50px;
           width: 50px;
-          @include mixins.desktop {
+          @include desktop {
             display: none;
           }
         }
         .logotype {
           height: 60px;
           width: 140px;
-          @include mixins.tablet {
+          @include tablet {
             height: 80px;
             width: 160px;
           }
-          @include mixins.desktop {
+          @include desktop {
             padding-left: 20px;
           }
         }
@@ -55,13 +68,13 @@ body {
         justify-content: center;
         cursor: pointer;
         width: 45%;
-        @include mixins.tablet {
+        @include tablet {
           justify-content: flex-end;
           padding-right: 20px;
         }
         ul {
           display: none;
-          @include mixins.desktop {
+          @include desktop {
             display: contents;
           }
           li {
@@ -78,7 +91,7 @@ body {
           width: 40px;
         }
         span {
-          @include mixins.desktop {
+          @include desktop {
             font-size: 0.9rem;
           }
         }
@@ -94,15 +107,15 @@ body {
     height: 700px;
     background-image: url("../assets/pictures/Header-background.jpg");
     background-size: cover;
-    @include mixins.tablet {
+    @include tablet {
       height: 542px;
     }
-    @include mixins.desktop {
+    @include desktop {
       height: 887px;
     }
     .heading-box-tablet {
       display: none;
-      @include mixins.tablet {
+      @include tablet {
         display: flex;
         flex-direction: column;
       }
@@ -111,7 +124,7 @@ body {
         top: 120px;
         left: 40px;
         color: white;
-        @include mixins.desktop {
+        @include desktop {
           left: 250px;
         }
       }
@@ -120,7 +133,7 @@ body {
         top: 60px;
         left: 80px;
         color: white;
-        @include mixins.desktop {
+        @include desktop {
           left: 280px;
           top: 80px;
         }
@@ -131,7 +144,7 @@ body {
       flex-direction: column;
       justify-content: flex-end;
       height: 60%;
-      @include mixins.tablet {
+      @include tablet {
         display: none;
       }
       h1 {
@@ -147,11 +160,11 @@ body {
       img {
         width: 50px;
         height: 50px;
-        @include mixins.tablet {
+        @include tablet {
           position: relative;
           left: 40px;
         }
-        @include mixins.desktop {
+        @include desktop {
           left: 250px;
         }
       }
@@ -162,9 +175,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: variables.$secondary-color;
+    background-color: $secondary-color;
 
-    @include mixins.desktop {
+    @include desktop {
       justify-content: flex-start;
       flex-direction: column;
       height: 800px;
@@ -181,7 +194,7 @@ body {
       align-items: center;
       width: 100%;
 
-      @include mixins.desktop {
+      @include desktop {
         flex-direction: row;
       }
       .product {
@@ -194,7 +207,7 @@ body {
         background-color: white;
         border: 1px solid black;
 
-        @include mixins.tablet {
+        @include tablet {
           width: 55%;
         }
         img {
@@ -206,7 +219,7 @@ body {
           height: 50%;
           padding-bottom: 20px;
           top: 20px;
-          @include mixins.desktop {
+          @include desktop {
             margin-top: 20px;
           }
         }
@@ -233,7 +246,7 @@ body {
             height: 40px;
             width: 40px;
             cursor: pointer;
-            @include mixins.tablet {
+            @include tablet {
               right: 100%;
               bottom: 10px;
             }
@@ -253,7 +266,7 @@ body {
       flex-direction: column;
       width: 95%;
       height: 90%;
-      @include mixins.desktop {
+      @include desktop {
         flex-direction: row;
         width: 80%;
       }
@@ -262,7 +275,7 @@ body {
         width: 100%;
         background-image: url("../assets/pictures/kitchenwares-picture.jpg");
         background-size: 100%;
-        @include mixins.desktop {
+        @include desktop {
           height: 100%;
           background-size: cover;
           background-repeat: no-repeat;
@@ -274,10 +287,10 @@ body {
         align-items: center;
         height: 50%;
         width: 100%;
-        background-color: variables.$secondary-color;
+        background-color: $secondary-color;
         border: 1px solid black;
 
-        @include mixins.desktop {
+        @include desktop {
           height: 100%;
         }
         .logotype-wrapper {
@@ -285,14 +298,14 @@ body {
           justify-content: center;
           align-items: center;
           height: 60%;
-          @include mixins.desktop {
+          @include desktop {
             width: 100%;
             align-items: flex-end;
           }
           .logotype {
             width: 350px;
             height: 160px;
-            @include mixins.desktop {
+            @include desktop {
               width: 450px;
               height: 240px;
             }
@@ -306,7 +319,7 @@ body {
           border: 1px solid black;
           background-color: white;
           cursor: pointer;
-          @include mixins.desktop {
+          @include desktop {
             position: relative;
             top: 40px;
           }
@@ -323,10 +336,10 @@ body {
     height: 600px;
     background-image: url(../assets/pictures/background-contact.png);
     background-repeat: no-repeat;
-    @include mixins.tablet {
+    @include tablet {
       background-image: url(../assets/pictures/background-contact-tablet.png);
     }
-    @include mixins.desktop {
+    @include desktop {
       background-image: url(../assets/pictures/background-contact-desktop.png);
       height: 700px;
     }
@@ -341,7 +354,7 @@ body {
       justify-content: center;
       flex-direction: column;
       width: 70%;
-      @include mixins.desktop {
+      @include desktop {
         align-items: center;
       }
       .text-box {
@@ -350,15 +363,15 @@ body {
         align-items: flex-end;
         height: 30%;
         width: 100%;
-        @include mixins.desktop {
+        @include desktop {
           width: 35%;
           justify-content: flex-start;
         }
         p {
-          @include mixins.tablet {
+          @include tablet {
             font-size: 1.1rem;
           }
-          @include mixins.desktop {
+          @include desktop {
             font-size: 1.2rem;
           }
         }
@@ -370,7 +383,7 @@ body {
 
         margin: 20px;
         height: 70%;
-        @include mixins.desktop {
+        @include desktop {
           width: 60%;
           justify-content: flex-start;
         }
@@ -378,19 +391,19 @@ body {
         form {
           label {
             font-size: 0.7rem;
-            @include mixins.tablet {
+            @include tablet {
               font-size: 0.8rem;
             }
-            @include mixins.desktop {
+            @include desktop {
               font-size: 0.9rem;
             }
           }
           input {
             width: 250px;
             height: 25px;
-            background-color: variables.$secondary-color;
+            background-color: $secondary-color;
             border: none;
-            @include mixins.desktop {
+            @include desktop {
               width: 400px;
               height: 40px;
               font-size: 0.6rem;
@@ -398,11 +411,11 @@ body {
           }
           textarea {
             width: 250px;
-            background-color: variables.$secondary-color;
-            @include mixins.tablet {
+            background-color: $secondary-color;
+            @include tablet {
               height: 100px;
             }
-            @include mixins.desktop {
+            @include desktop {
               width: 400px;
               height: 100px;
               font-size: 0.6rem;
@@ -414,12 +427,12 @@ body {
             font-weight: bold;
             background-color: white;
             cursor: pointer;
-            @include mixins.tablet {
+            @include tablet {
               width: 120px;
               height: 30px;
               font-size: 0.7rem;
             }
-            @include mixins.desktop {
+            @include desktop {
               margin-top: 20px;
               height: 40px;
               font-size: 0.8rem;
@@ -434,19 +447,19 @@ body {
     flex-direction: column;
     height: 450px;
     border-top: 1px solid black;
-    @include mixins.desktop {
+    @include desktop {
       height: 320px;
     }
     .logo-text-wrapper {
       display: flex;
       flex-direction: column;
-      @include mixins.desktop {
+      @include desktop {
         flex-direction: row;
       }
       .logotype-box {
         display: flex;
         height: 25%;
-        @include mixins.desktop {
+        @include desktop {
           justify-content: flex-end;
           align-items: flex-end;
           height: 100%;
@@ -458,11 +471,11 @@ body {
           margin-left: 20px;
           height: 100px;
           width: 180px;
-          @include mixins.tablet {
+          @include tablet {
             height: 120px;
             width: 200px;
           }
-          @include mixins.desktop {
+          @include desktop {
             position: relative;
             left: 40px;
             top: 30px;
@@ -478,7 +491,7 @@ body {
         align-items: flex-start;
         width: 50%;
         height: 50%;
-        @include mixins.desktop {
+        @include desktop {
           justify-content: flex-end;
           flex-direction: row;
           width: 100%;
@@ -488,10 +501,10 @@ body {
           cursor: pointer;
           text-decoration: underline;
           font-size: 0.8rem;
-          @include mixins.tablet {
+          @include tablet {
             font-size: 0.9rem;
           }
-          @include mixins.desktop {
+          @include desktop {
             padding-right: 60px;
           }
         }
@@ -499,7 +512,7 @@ body {
     }
     .icon-box {
       height: 25%;
-      @include mixins.desktop {
+      @include desktop {
         display: flex;
         justify-content: flex-end;
         padding-right: 20px;
@@ -511,7 +524,7 @@ body {
       height: 70px;
       width: 200px;
       opacity: 80%;
-      @include mixins.tablet {
+      @include tablet {
         padding-top: 20px;
         height: 60px;
         width: 180px;

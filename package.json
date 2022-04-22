@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel index.html"
+    "build": "parcel index.html",
+    "scss": "node-sass --watch scss -o css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-sass": "^7.0.1",
     "parcel": "^2.4.1"
   },
   "devDependencies": {
