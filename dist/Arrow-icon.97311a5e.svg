@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48.18 29.68"><defs><style>.e {
+  fill: url("#d");
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+</style><linearGradient id="d" x1="-14.07" y1="-10.53" x2="22.98" y2="9.33" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset="1" stop-color="#ba2524"></stop></linearGradient></defs><g id="a"></g><g id="b"><g id="c"><path class="e" d="M24.11,16.9L39.19,1.6s3.67-2.79,7.09,.53c0,0,3.16,3.11,0,7.06L27.47,27.97s-1.15,1.21-3.37,1.21-3.23-1.14-3.23-1.14L1.65,8.89s-2.88-3.49,.46-6.93c0,0,2.56-2.9,6.65-.53l15.34,15.47Z"></path></g></g></svg>

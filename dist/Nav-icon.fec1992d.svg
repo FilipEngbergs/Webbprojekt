@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.78 45.78"><defs><style>.e {
+  fill: url("#d");
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+.f {
+  fill: #f0e8e6;
+}
+
+</style><linearGradient id="d" x1="1.02" y1="4.18" x2="51.19" y2="47.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset=".05" stop-color="#f4dddc"></stop><stop offset=".14" stop-color="#e2a5a5"></stop><stop offset=".23" stop-color="#d47776"></stop><stop offset=".31" stop-color="#c85352"></stop><stop offset=".39" stop-color="#c03939"></stop><stop offset=".46" stop-color="#bb2a29"></stop><stop offset=".52" stop-color="#ba2524"></stop><stop offset="1" stop-color="#ba2423"></stop></linearGradient></defs><g id="a"></g><g id="b"><g id="c"><g><circle class="e" cx="22.89" cy="22.89" r="22.39"></circle><g><path class="f" d="M22.89,16.53h11.99s1.19-.47,1.19-1.1,.03-.63,.03-.63v-.36s-.66-.98-1.26-.98h-4.17l-19.86,.03s-1.13,.46-1.13,1.12v.66s.38,1.26,1.31,1.26h11.88Z"></path><path class="f" d="M22.87,24.42h11.99s1.19-.47,1.19-1.1,.03-.63,.03-.63v-.36s-.66-.98-1.26-.98h-4.17l-19.86,.03s-1.13,.46-1.13,1.12v.66s.38,1.26,1.31,1.26h11.88Z"></path><path class="f" d="M22.87,32.32h11.99s1.19-.47,1.19-1.1,.03-.63,.03-.63v-.36s-.66-.98-1.26-.98h-4.17l-19.86,.03s-1.13,.46-1.13,1.12v.66s.38,1.26,1.31,1.26h11.88Z"></path></g></g></g></g></svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47.35 47.35"><defs><style>.e {
+  fill: url("#d");
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+.f {
+  fill: #f0e8e6;
+}
+
+</style><linearGradient id="d" x1="-13.69" y1="13.08" x2="49.47" y2="30.99" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset="0" stop-color="#fefcfc"></stop><stop offset=".11" stop-color="#eecac9"></stop><stop offset=".22" stop-color="#df9d9d"></stop><stop offset=".33" stop-color="#d37877"></stop><stop offset=".44" stop-color="#ca5958"></stop><stop offset=".56" stop-color="#c24141"></stop><stop offset=".69" stop-color="#bd3130"></stop><stop offset=".83" stop-color="#ba2726"></stop><stop offset="1" stop-color="#b92423"></stop></linearGradient></defs><g id="a"></g><g id="b"><g id="c"><g><circle class="e" cx="23.67" cy="23.67" r="23.17"></circle><path class="f" d="M20.95,20.94v-7.58s.37-2.31,2.7-2.38c0,0,2.48-.06,2.74,2.51v7.46h7.62s2.33,.33,2.37,2.69c0,0,.17,2.17-2.29,2.76h-7.67l-.03,7.51s-.17,2.33-2.74,2.47c0,0-2.2,.06-2.7-2.47v-7.52l-7.76-.03s-2.12-.29-2.23-2.68c0,0-.09-2.33,2.4-2.7l7.58-.03Z"></path></g></g></g></svg>
